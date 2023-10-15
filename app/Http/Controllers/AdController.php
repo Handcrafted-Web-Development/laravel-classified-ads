@@ -31,7 +31,7 @@ class AdController extends Controller
         $content = Storage::url($path);
         $datas['file'] = $content;
         $ad = Ad::create($datas);
-        return redirect('/dashboard/tasks');
+        return redirect('/dashboard/ads');
     }
 
     public function index(): View
@@ -48,6 +48,6 @@ class AdController extends Controller
     public function destroy(Ad $ad): RedirectResponse
     {
         $ad->delete();
-        return redirect('/dashboard/tasks');
+        return redirect('/dashboard/ads');
     }
 }
