@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('brand')->nullable();
             $table->date('due_date');
             $table->string('guarantee');
-            $table->boolean('exchange');
             $table->timestamps();
         });
 

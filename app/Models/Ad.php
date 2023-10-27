@@ -32,7 +32,6 @@ class Ad extends Model
         'description',
         'guarantee',
         'due_date',
-        'exchange',
         'author_id',
         'picture_id',
         'category_name',

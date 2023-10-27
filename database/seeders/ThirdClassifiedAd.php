@@ -26,7 +26,6 @@ class ThirdClassifiedAd extends Seeder
             'brand' => "Canape Tissu",
             'due_date' => now(),
             'guarantee' => "Garantie 1 an",
-            'exchange' => fake()->boolean(['0', '1']),
             'author_id' => User::factory(),
             'category_name' => Category::create(['name' => 'Furniture']),
             'delivery_name' => Delivery::create(['name' => 'Other']),

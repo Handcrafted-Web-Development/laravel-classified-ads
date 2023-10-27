@@ -26,7 +26,6 @@ class SecondClassifiedAd extends Seeder
             'brand' => "Toyota Camry",
             'due_date' => now(),
             'guarantee' => "Aucune",
-            'exchange' => fake()->boolean(['0', '1']),
             'author_id' => User::factory(),
             'category_name' => Category::create(['name' => 'Car']),
             'delivery_name' => Delivery::create(['name' => 'Click and Collect']),

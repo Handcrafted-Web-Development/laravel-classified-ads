@@ -135,15 +135,16 @@
                         </div>
                         <div class="flex items-start mb-6">
                             <div class="flex items-center h-5">
-                                <input name="exchange" type="checkbox" id="exchange"
-                                       class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
-                                       value="{{ old('exchange') ? 'checked' : '' }}"
-                                >
+{{--                                <input name="exchange" type="checkbox" id="exchange" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"--}}
+{{--                                       value="{{ old('exchange') ? 'checked' : '' }}"--}}
+{{--                                >--}}
+{{--                                <input type="hidden" name="exchange" value="{{ old('exchange') ? '1' : '0' }}">--}}
+
                             </div>
-                            <div class="ml-3 text-sm">
-                                <label for="exchange" class="text-gray-500">I am open to exchanges or
-                                    negotiations</label>
-                            </div>
+{{--                            <div class="ml-3 text-sm">--}}
+{{--                                <label for="exchange" class="text-gray-500">I am open to exchanges or--}}
+{{--                                    negotiations</label>--}}
+{{--                            </div>--}}
                         </div>
                         <button type="submit"
                                 class="text-blue-600 bg-primary-700 border border-blue-600 hover:text-white hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">

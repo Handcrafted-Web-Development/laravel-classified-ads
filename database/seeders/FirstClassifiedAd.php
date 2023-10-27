@@ -26,7 +26,6 @@ class FirstClassifiedAd extends Seeder
             'brand' => "Apple",
             'due_date' => now(),
             'guarantee' => "Garantie 6 mois",
-            'exchange' => fake()->boolean(['0', '1']),
             'author_id' => User::factory(),
             'category_name' => Category::create(['name' => 'Electronics']),
             'delivery_name' => Delivery::create(['name' => 'Home Delivery']),
