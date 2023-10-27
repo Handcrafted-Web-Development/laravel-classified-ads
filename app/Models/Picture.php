@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Model;
 
 class Picture extends Model
@@ -26,11 +25,8 @@ class Picture extends Model
         'file'
     ];
 
-    /**
-     * Get the pictures for the classified ads.
-     */
-    public function pictures(): HasMany
+    public function ad()
     {
-        return $this->hasMany(Ad::class);
+        return $this->belongsTo(Ad::class, 'picture_id');
     }
 }

@@ -13,10 +13,13 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Manage ads') }}
                     </x-nav-link>
                     <x-nav-link :href="route('ads.index')" :active="request()->routeIs('ads.index')">
-                        {{ __('Voir les annonces') }}
+                        {{ __('Classified Ads') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('ads.create')" :active="request()->routeIs('ads.create')">
+                        {{ __('Create ads') }}
                     </x-nav-link>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PublicController;
 use App\Http\Controllers\AdController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/ads'); // Redirige vers la page d'accueil (définie par '/')
+})->name('ads');
+
+Route::get('/ads', [PublicController::class, 'index'])->name('ads');
+Route::prefix('ads')->group(function () {
+    Route::get('{id}', [PublicController::class, 'show'])->name('ad');
 });
 
 Route::get('/dashboard', function () {

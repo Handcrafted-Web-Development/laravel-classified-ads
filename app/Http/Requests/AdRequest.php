@@ -23,12 +23,15 @@ class AdRequest extends FormRequest
     {
         return [
             'title' => ["required", "string"],
-            'description' => ["required", "string"],
-            'price' => ["required", "decimal"],
+            'brand' => ["required", "string"],
+            'price' => ["required", "decimal:2"],
             'year' => ["required", "integer"],
-            'due_date' => ["required", "date"],
+            'size' => ["required", 'string'],
+//            'category_name' => ["required", 'string'],
+//            'delivery_name' => ["required", 'string'],
+            'description' => ["required", "string"],
             'guarantee' => ["required", "string"],
-            'exchange' => ["required", "boolean"]
+            'due_date' => ["required", "date"],
         ];
     }
 }

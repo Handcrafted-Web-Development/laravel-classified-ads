@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Model;
 
 class Ad extends Model
@@ -24,15 +25,19 @@ class Ad extends Model
      */
     protected $fillable = [
         'title',
-        'description',
+        'brand',
         'price',
         'year',
         'size',
-        'brand',
-        'due_date',
+        'description',
         'guarantee',
+        'due_date',
         'exchange',
-        'author_id'
+        'author_id',
+        'picture_id',
+        'category_name',
+        'delivery_name',
+        'state_name'
     ];
 
     /**
@@ -41,5 +46,13 @@ class Ad extends Model
     public function author(): BelongsTo
     {
         return $this->belongsTo(User::class, 'author_id');
+    }
+
+    /**
+     * Get the pictures for the classified ads.
+     */
+    public function pictures(): HasMany
+    {
+        return $this->hasMany(Picture::class, 'picture_id');
     }
 }
