@@ -26,7 +26,7 @@ class AdFactory extends Factory
             'brand' => fake()->company(),
             'due_date' => now(),
             'guarantee' => fake()->text(35),
-            'exchange' => fake()->boolean(['yes', 'no']),
+            'exchange' => fake()->boolean(['0', '1']),
             'author_id' => User::factory()
         ];
     }
