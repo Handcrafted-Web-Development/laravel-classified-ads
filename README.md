@@ -57,7 +57,17 @@ Exécutez les migrations pour créer les tables de base de données :
    php artisan migrate
    ```
 
-6. **Initialisation de Laravel avec Laravel Valet**
+6. **Initialiser des valeurs de départs**
+
+Exécutez les commandes suivantes pour générer des données dans la base :
+
+   ```shell
+   php artisan db:seed --class=FirstClassifiedAd
+   php artisan db:seed --class=SecondClassifiedAd
+   php artisan db:seed --class=ThirdClassifiedAd
+   ```
+
+7. **Initialisation de Laravel avec Laravel Valet**
 
 Après avoir installer Laravel Valet sur sa machine, lancer les commandes suivantes :
 
@@ -67,12 +77,13 @@ Après avoir installer Laravel Valet sur sa machine, lancer les commandes suivan
    ```
 Le site sera accessible à l'adresse http://classified-ads.test dans votre navigateur.
 
-7. **Lancer Vite.js**
+8. **Lancer Vite.js**
 
 Vous pouvez maintenant lancer le serveur vite.js :
 
    ```shell
    npm run dev
    ```
+
 
 Bon développement ! 🍀
