@@ -85,5 +85,9 @@ Vous pouvez maintenant lancer le serveur vite.js :
    npm run dev
    ```
 
+9. **Options Bonus**
+
+- Design d'interface propre !
+
 
 Bon développement ! 🍀
