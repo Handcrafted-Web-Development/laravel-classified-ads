@@ -2,8 +2,7 @@
 
 # Laravel et MVC 💯 - Développement d'une Plateforme d'Annonces de Biens d'Occasion avec Interface d'Administration sur Laravel 👨🏼‍💻
 
-_Lisez attentivement le Readme avant de commencer toute manipulation pour mieux appréhender le sujet et
-qui sait, profiter du point bonus si vous le voulez !_ ✌️
+_Lisez attentivement le Readme avant de commencer toute manipulation !_ ✌️
 
 ## Prérequis 👨🏼‍🏫
 
